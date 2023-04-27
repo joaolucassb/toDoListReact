@@ -37,7 +37,10 @@ export default class Main extends Component {
       alert('Tarefa não poder ficar vazia');
       return;
     }
-    if (tarefas.indexOf(novaTarefa) != -1) return;
+    if (tarefas.indexOf(novaTarefa) != -1) {
+      alert('Tarefa já existe');
+      return;
+    }
 
     const novasTarefas = [...tarefas];
 
